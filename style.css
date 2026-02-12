@@ -1,0 +1,150 @@
+.back {
+  background-color: rgba(41, 38, 38, 0.519);
+  height: 900px;
+
+
+  display: flex;
+  justify-content: center; /* horizontal */
+  align-items: center;     /* vertical */
+}
+
+.box {
+  background-color: salmon;
+  width: 300px;
+  height: 550px;
+  transform: scale(1.5);
+  box-shadow: 10px 10px whitesmoke;
+  border-radius: 40px;
+  position: relative;
+  z-index: 1;
+  
+}
+.name{
+    position: absolute;
+    left: 50px;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    transition: 0.3s;
+    box-shadow: 0 0 20px salmon;
+    
+    
+}
+.name:hover{
+    transition: scale(1.4);
+    cursor:pointer;
+
+}
+.dp{
+    z-index: 4;
+    position: absolute;
+    scale: 15%;
+    top: -55px;
+    padding: 10px;
+    right: 52%;
+    object-fit: cover ;
+    
+
+}
+.page {
+  position: absolute;
+  z-index: 3;
+
+  width: 350px;
+  height: 650px;
+  background-color: blanchedalmond;
+  border-radius: 40px;
+
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+
+  padding: 20px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+.cons {
+  background-color: rgb(225, 133, 22);
+  padding:10px;
+  border-radius: 20px;
+  margin-bottom: 10px;
+
+  width: fit-content;
+  max-width: 70%;
+
+  align-self: flex-start; /* 👈 LEFT */
+}
+
+.consr {
+  background-color: rgb(59, 225, 22);
+  padding: 10px;
+  border-radius: 20px;
+  margin-bottom: 10px;
+
+  width: fit-content;
+  max-width: 30%;
+
+  align-self: flex-end;   /* 👈 RIGHT */
+}
+.msg{
+    border-radius: 40px;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    left:20px;
+
+}
+.msg input{
+    width: 80%;
+  padding: 12px;
+
+  border-radius: 40px;   /* ✅ NOW it works */
+  border: none;
+  
+
+  font-size: 14px;
+
+}
+.button button{
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    border: wheat;
+    cursor: pointer;
+    transition: 0.5s;
+    top: 191px;
+    left: 310px;
+    position: relative;
+
+}
+.button:hover{
+    transition: 0.5s;
+    transform: scaleZ(1.9);
+}
+.call button{
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    position: relative;
+    bottom: 538px;
+    left: 210px;
+}
+.videocall button{
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    position: relative;
+    bottom: 580px;
+    left: 280px;
+
+}
+
+
+
+
+
